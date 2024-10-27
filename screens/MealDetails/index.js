@@ -1,4 +1,4 @@
-import { Image, Platform, StyleSheet, Text, View } from 'react-native'
+import { Button, Image, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native'
 import MEALS from '../../utils/mocks/meals.json'
 import Entypo from '@expo/vector-icons/Entypo';
 import React, { useEffect } from 'react'
@@ -20,12 +20,17 @@ const MealDetails = ({ route }) => {
 
     useEffect(() => {
         navigation.setOptions({
-            title: name
+            title: name,
+            headerRight: () => (
+                <Pressable>
+                    <Entypo name='heart-outlined' size={24} color={'grey'} />
+                </Pressable>
+            )
         })
     }, [])
 
   return (
-    <View style={styles.mealInfoContainer}>
+    <ScrollView style={styles.mealInfoContainer}>
       <View>
         <Image style={styles.mealImage} source={{ uri: image }} />
       </View>
@@ -45,7 +50,7 @@ const MealDetails = ({ route }) => {
                 ))
             }
       </View>
-    </View>
+    </ScrollView>
   )
 }
 
@@ -59,12 +64,6 @@ const styles = StyleSheet.create({
         elevation: 4,
         padding: 16,
         margin: 12,
-        backgroundColor: 'white',
-        shadowColor: 'black',
-        shadowOpacity: 0.25,
-        shadowOffset: { width: 0, height: 10 },
-        shadowRadius: 8,
-        overflow: Platform.OS === 'android' ? 'hidden' : 'visible' // this helps when pressable overflows grid
     },
     mealInfo: {
         borderBottomWidth: 2,
