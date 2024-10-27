@@ -1,0 +1,52 @@
+[
+    {
+        "categoryName": "Breakfast",
+        "categoryId": "1",
+        "mealsKey": "breakfast_meals"
+    },
+    {
+        "categoryName": "Lunch",
+        "categoryId": "2",
+        "mealsKey": "lunch_meals"
+    },
+    {
+        "categoryName": "Dinner",
+        "categoryId": "3",
+        "mealsKey": "dinner_meals"
+    },
+    {
+        "categoryName": "Dessert",
+        "categoryId": "4",
+        "mealsKey": "dessert_meals"
+    },
+    {
+        "categoryName": "Appetizers",
+        "categoryId": "5",
+        "mealsKey": "appetizer_meals"
+    },
+    {
+        "categoryName": "Snacks",
+        "categoryId": "6",
+        "mealsKey": "snack_meals"
+    },
+    {
+        "categoryName": "Vegan",
+        "categoryId": "7",
+        "mealsKey": "vegan_meals"
+    },
+    {
+        "categoryName": "Smoothies",
+        "categoryId": "8",
+        "mealsKey": "smoothie_meals"
+    },
+    {
+        "categoryName": "Beverages",
+        "categoryId": "9",
+        "mealsKey": "beverage_meals"
+    },
+    {
+        "categoryName": "Specials",
+        "categoryId": "10",
+        "mealsKey": "specials_meals"
+    }
+]
